@@ -24,6 +24,11 @@
 		DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91234B224C6FDB00E7A95D /* ApiCaller.swift */; };
 		DC91234E224C6FF700E7A95D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91234D224C6FF700E7A95D /* Errors.swift */; };
 		DC912351224C704000E7A95D /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912350224C704000E7A95D /* Champion.swift */; };
+		DC912354224C71AD00E7A95D /* AllChampionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912353224C71AD00E7A95D /* AllChampionsViewModel.swift */; };
+		DC912357224C727E00E7A95D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912356224C727E00E7A95D /* MasterViewController.swift */; };
+		DC912359224C72A800E7A95D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912358224C72A800E7A95D /* DetailViewController.swift */; };
+		DC91235C224C72CA00E7A95D /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */; };
+		DC91235D224C72CA00E7A95D /* ChampionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		DC91234B224C6FDB00E7A95D /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		DC91234D224C6FF700E7A95D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		DC912350224C704000E7A95D /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		DC912353224C71AD00E7A95D /* AllChampionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChampionsViewModel.swift; sourceTree = "<group>"; };
+		DC912356224C727E00E7A95D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		DC912358224C72A800E7A95D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionCollectionViewCell.xib; sourceTree = "<group>"; };
 		E2444D84FC5F1AE960FF70BE /* Pods-LeagueMaster.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMaster.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMaster/Pods-LeagueMaster.qa.xcconfig"; sourceTree = "<group>"; };
 		E9B15BE4F17EA9171A4F9B4D /* Pods-LeagueMasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMasterUITests/Pods-LeagueMasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2DAA70C5EFED50E45DBD4C /* Pods-LeagueMasterTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterTests.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMasterTests/Pods-LeagueMasterTests.qa.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +184,8 @@
 		DC9122F5224C53ED00E7A95D /* LeagueMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DC912355224C71C500E7A95D /* View */,
+				DC912352224C718C00E7A95D /* ViewModel */,
 				DC91234F224C703300E7A95D /* Model */,
 				DC912332224C606500E7A95D /* Common */,
 				DC91232C224C5ECE00E7A95D /* Configs */,
@@ -233,6 +245,25 @@
 				DC912350224C704000E7A95D /* Champion.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DC912352224C718C00E7A95D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC912353224C71AD00E7A95D /* AllChampionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC912355224C71C500E7A95D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC912356224C727E00E7A95D /* MasterViewController.swift */,
+				DC912358224C72A800E7A95D /* DetailViewController.swift */,
+				DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */,
+				DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC912301224C53F000E7A95D /* LaunchScreen.storyboard in Resources */,
+				DC91235D224C72CA00E7A95D /* ChampionCollectionViewCell.xib in Resources */,
 				DC9122FE224C53F000E7A95D /* Assets.xcassets in Resources */,
 				DC9122FC224C53ED00E7A95D /* Main.storyboard in Resources */,
 			);
@@ -461,6 +493,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC912359224C72A800E7A95D /* DetailViewController.swift in Sources */,
+				DC912357224C727E00E7A95D /* MasterViewController.swift in Sources */,
 				DC912351224C704000E7A95D /* Champion.swift in Sources */,
 				DC9122F9224C53ED00E7A95D /* ViewController.swift in Sources */,
 				DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */,
@@ -469,6 +503,8 @@
 				DC912331224C5F4900E7A95D /* Environment.swift in Sources */,
 				DC9122F7224C53ED00E7A95D /* AppDelegate.swift in Sources */,
 				DC91234E224C6FF700E7A95D /* Errors.swift in Sources */,
+				DC91235C224C72CA00E7A95D /* ChampionCollectionViewCell.swift in Sources */,
+				DC912354224C71AD00E7A95D /* AllChampionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
