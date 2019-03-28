@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>server_base_url</key>
+	<string>$(server_base_url)</string>
+	<key>static_data_base_url</key>
+	<string>$(static_data_base_url)</string>
+	<key>game_patch</key>
+	<string>$(game_patch)</string>
+	<key>api_key</key>
+	<string>$(api_key)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
