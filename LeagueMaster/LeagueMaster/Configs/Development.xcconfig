@@ -1,0 +1,15 @@
+//
+//  Development.xcconfig
+//  LeagueMaster
+//
+//  Created by Ying Yang on 3/27/19.
+//  Copyright © 2019 Ying Yang. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+server_base_url = https:/$()/na1.api.riotgames.com
+static_data_base_url = http:/$()/ddragon.leagueoflegends.com
+game_patch = 9.4.1
+api_key = RGAPI-19e5a12b-b0b6-441c-80be-bfdc4fed0815
