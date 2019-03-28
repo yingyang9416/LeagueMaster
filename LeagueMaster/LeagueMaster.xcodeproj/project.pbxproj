@@ -19,6 +19,10 @@
 		DC912331224C5F4900E7A95D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912330224C5F4900E7A95D /* Environment.swift */; };
 		DC912334224C608500E7A95D /* ProjectConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912333224C608500E7A95D /* ProjectConstants.swift */; };
 		DC912346224C6D2E00E7A95D /* Pods-LeagueMaster in Frameworks */ = {isa = PBXBuildFile; fileRef = DC912345224C6D2E00E7A95D /* Pods-LeagueMaster */; };
+		DC91234A224C6FB600E7A95D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912349224C6FB600E7A95D /* NetworkManager.swift */; };
+		DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91234B224C6FDB00E7A95D /* ApiCaller.swift */; };
+		DC91234E224C6FF700E7A95D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91234D224C6FF700E7A95D /* Errors.swift */; };
+		DC912351224C704000E7A95D /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912350224C704000E7A95D /* Champion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		DC912339224C627F00E7A95D /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		DC91233E224C647000E7A95D /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		DC912345224C6D2E00E7A95D /* Pods-LeagueMaster */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Pods-LeagueMaster"; path = "Pods/Target Support Files/Pods-LeagueMaster"; sourceTree = "<group>"; };
+		DC912349224C6FB600E7A95D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC91234B224C6FDB00E7A95D /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		DC91234D224C6FF700E7A95D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DC912350224C704000E7A95D /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		E9B15BE4F17EA9171A4F9B4D /* Pods-LeagueMasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMasterUITests/Pods-LeagueMasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC3297DE767FEBF6F123719D /* Pods-LeagueMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterTests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMasterTests/Pods-LeagueMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +154,7 @@
 		DC9122F5224C53ED00E7A95D /* LeagueMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DC91234F224C703300E7A95D /* Model */,
 				DC912332224C606500E7A95D /* Common */,
 				DC91232C224C5ECE00E7A95D /* Configs */,
 				DC9122F6224C53ED00E7A95D /* AppDelegate.swift */,
@@ -191,8 +200,19 @@
 			isa = PBXGroup;
 			children = (
 				DC912333224C608500E7A95D /* ProjectConstants.swift */,
+				DC912349224C6FB600E7A95D /* NetworkManager.swift */,
+				DC91234B224C6FDB00E7A95D /* ApiCaller.swift */,
+				DC91234D224C6FF700E7A95D /* Errors.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DC91234F224C703300E7A95D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC912350224C704000E7A95D /* Champion.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +418,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC912351224C704000E7A95D /* Champion.swift in Sources */,
 				DC9122F9224C53ED00E7A95D /* ViewController.swift in Sources */,
+				DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */,
 				DC912334224C608500E7A95D /* ProjectConstants.swift in Sources */,
+				DC91234A224C6FB600E7A95D /* NetworkManager.swift in Sources */,
 				DC912331224C5F4900E7A95D /* Environment.swift in Sources */,
 				DC9122F7224C53ED00E7A95D /* AppDelegate.swift in Sources */,
+				DC91234E224C6FF700E7A95D /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
