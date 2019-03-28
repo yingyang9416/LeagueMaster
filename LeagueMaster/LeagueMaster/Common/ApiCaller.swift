@@ -17,7 +17,7 @@ class ApiCaller {
         let netWorkManager = NetWorkManager(URL: url, httpMethodType: .GET)
         netWorkManager.callAPI { (data, status, error) in
             guard let data = data else {
-                onFail(NetWorkError.otherError)
+                onFail(NetWorkError.noDataError)
                 return
             }
             
@@ -28,7 +28,7 @@ class ApiCaller {
                         onSuccess(responseModel)
                     }
                 }catch {
-                    onFail(NetWorkError.otherError)
+                    onFail(NetWorkError.parseError)
                 }
             default:
                 onFail(NetWorkError.otherError)

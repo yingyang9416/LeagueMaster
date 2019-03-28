@@ -28,11 +28,6 @@ class MasterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    @IBAction func show(_ sender: Any) {
-//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController")
-//        splitViewController?.showDetailViewController(vc, sender: nil)
-//    }
-    
     private func setUpViews(){
         championCollectionView.register(UINib(nibName: "ChampionCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ChampionCollectionViewCell")
         championCollectionView.delegate = self
@@ -50,7 +45,7 @@ extension MasterViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChampionCollectionViewCell", for: indexPath) as! ChampionCollectionViewCell
         let champ = viewModel.allChampions[indexPath.row]
-        cell.configureCell(name: champ.name)
+        cell.configureCell(champion: champ)
         return cell
     }
     

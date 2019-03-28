@@ -19,9 +19,9 @@ class ChampionCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configureCell(name: String){
-        self.nameLabel.text = name
-        self.imageView.sd_setImage(with: URL(string: "\(STATIC_DATA_BASE_URL)/cdn/img/champion/loading/\(name)_0.jpg"), placeholderImage: UIImage(named: "Aatrox"))
+    func configureCell(champion: Champion){
+        self.nameLabel.text = champion.name
+        self.imageView.sd_setImage(with: URL(string: "\(STATIC_DATA_BASE_URL)/cdn/img/champion/loading/\(champion.id)_0.jpg"), placeholderImage: UIImage(named: "Aatrox"))
     }
 
 }
