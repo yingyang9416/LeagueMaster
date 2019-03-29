@@ -68,6 +68,12 @@ extension MasterViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let championVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+        championVC.champion = viewModel.allChampions[indexPath.row]
+        splitViewController?.showDetailViewController(championVC, sender: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (self.championCollectionView.frame.width - 20 * 3) / 2
         let height = width * 1.82 + 24

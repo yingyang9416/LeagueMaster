@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uvp-dh-ujD">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,91 @@
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="lVA-ig-T94" customClass="DetailViewController" customModule="LeagueMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MWe-tY-yGs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nI9-Aq-M2d">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aq3-PV-Zot" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-V5-3EF">
+                                                <rect key="frame" x="24" y="16" width="366" height="300"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="KMv-bn-dLs"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N40-zm-WHC">
+                                                    <size key="itemSize" width="134" height="265"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SkinCollectionViewCell" id="vso-br-HYP" customClass="SkinCollectionViewCell" customModule="LeagueMaster" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="17.5" width="134" height="265"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="134" height="265"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-my-fsZ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="243.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="I6Q-my-fsZ" secondAttribute="height" multiplier="308:560" id="DTm-Us-NPn"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="I6Q-my-fsZ" secondAttribute="trailing" id="0fp-V9-3t4"/>
+                                                            <constraint firstItem="I6Q-my-fsZ" firstAttribute="top" secondItem="vso-br-HYP" secondAttribute="top" id="WRC-Tx-KY5"/>
+                                                            <constraint firstItem="I6Q-my-fsZ" firstAttribute="leading" secondItem="vso-br-HYP" secondAttribute="leading" id="b7F-OE-OQg"/>
+                                                        </constraints>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lcn-V5-3EF" secondAttribute="trailing" constant="24" id="XSC-bn-HDp"/>
+                                            <constraint firstItem="Lcn-V5-3EF" firstAttribute="top" secondItem="Aq3-PV-Zot" secondAttribute="top" constant="16" id="YDP-tQ-sVs"/>
+                                            <constraint firstItem="Lcn-V5-3EF" firstAttribute="leading" secondItem="Aq3-PV-Zot" secondAttribute="leading" constant="24" id="ll6-de-Ryb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Aq3-PV-Zot" firstAttribute="leading" secondItem="nI9-Aq-M2d" secondAttribute="leading" id="8L0-9S-0TY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aq3-PV-Zot" secondAttribute="trailing" id="dnV-Vx-xl0"/>
+                                    <constraint firstItem="Aq3-PV-Zot" firstAttribute="top" secondItem="nI9-Aq-M2d" secondAttribute="top" id="xkC-dq-XtS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aq3-PV-Zot" secondAttribute="bottom" id="zmX-Po-jLr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aq3-PV-Zot" firstAttribute="width" secondItem="sBP-HL-tr7" secondAttribute="width" id="FxX-7e-GTH"/>
+                            <constraint firstItem="nI9-Aq-M2d" firstAttribute="leading" secondItem="sBP-HL-tr7" secondAttribute="leading" id="W4b-e5-i8F"/>
+                            <constraint firstItem="Aq3-PV-Zot" firstAttribute="height" secondItem="sBP-HL-tr7" secondAttribute="height" priority="250" id="ZE6-Ib-i7n"/>
+                            <constraint firstItem="sBP-HL-tr7" firstAttribute="trailing" secondItem="nI9-Aq-M2d" secondAttribute="trailing" id="lcA-Yz-yEZ"/>
+                            <constraint firstItem="nI9-Aq-M2d" firstAttribute="top" secondItem="sBP-HL-tr7" secondAttribute="top" id="oPd-vW-Vlq"/>
+                            <constraint firstItem="sBP-HL-tr7" firstAttribute="bottom" secondItem="nI9-Aq-M2d" secondAttribute="bottom" id="t6H-fI-S4C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sBP-HL-tr7"/>
                     </view>
                     <navigationItem key="navigationItem" id="TKu-dc-ec4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mws-R7-feq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.8" y="206.44677661169416"/>
+            <point key="canvasLocation" x="1366.6666666666667" y="206.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D10-KL-ip5">
             <objects>
                 <navigationController id="kGo-oR-nQo" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DpN-uW-mDQ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -47,11 +115,11 @@
             <objects>
                 <viewController id="QPP-tE-dBK" customClass="MasterViewController" customModule="LeagueMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UBO-vo-UBa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-I9-ikU">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F8p-o3-BWB">
                                     <size key="itemSize" width="50" height="50"/>
@@ -99,7 +167,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aIy-iC-3kR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="31F-RD-hN6">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

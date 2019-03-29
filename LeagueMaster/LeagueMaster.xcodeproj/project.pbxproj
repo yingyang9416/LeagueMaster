@@ -31,6 +31,8 @@
 		DC91235D224C72CA00E7A95D /* ChampionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */; };
 		DC91235F224D9AAF00E7A95D /* UIViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91235E224D9AAF00E7A95D /* UIViewController+Helper.swift */; };
 		DC912361224DA9BB00E7A95D /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912360224DA9BB00E7A95D /* LoadingSpinner.swift */; };
+		DC912365224DC0C100E7A95D /* SkinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912364224DC0C100E7A95D /* SkinCollectionViewCell.swift */; };
+		DC912367224DC9C500E7A95D /* ChampionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912366224DC9C500E7A95D /* ChampionDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC91235E224D9AAF00E7A95D /* UIViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helper.swift"; sourceTree = "<group>"; };
 		DC912360224DA9BB00E7A95D /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		DC912364224DC0C100E7A95D /* SkinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC912366224DC9C500E7A95D /* ChampionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailsViewModel.swift; sourceTree = "<group>"; };
 		E2444D84FC5F1AE960FF70BE /* Pods-LeagueMaster.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMaster.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMaster/Pods-LeagueMaster.qa.xcconfig"; sourceTree = "<group>"; };
 		E9B15BE4F17EA9171A4F9B4D /* Pods-LeagueMasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMasterUITests/Pods-LeagueMasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2DAA70C5EFED50E45DBD4C /* Pods-LeagueMasterTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterTests.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMasterTests/Pods-LeagueMasterTests.qa.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				DC912353224C71AD00E7A95D /* AllChampionsViewModel.swift */,
+				DC912366224DC9C500E7A95D /* ChampionDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			children = (
 				DC912356224C727E00E7A95D /* MasterViewController.swift */,
 				DC912358224C72A800E7A95D /* DetailViewController.swift */,
+				DC912364224DC0C100E7A95D /* SkinCollectionViewCell.swift */,
 				DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */,
 				DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */,
 			);
@@ -505,11 +511,13 @@
 				DC9122F9224C53ED00E7A95D /* ViewController.swift in Sources */,
 				DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */,
 				DC912334224C608500E7A95D /* ProjectConstants.swift in Sources */,
+				DC912367224DC9C500E7A95D /* ChampionDetailsViewModel.swift in Sources */,
 				DC91234A224C6FB600E7A95D /* NetworkManager.swift in Sources */,
 				DC91235F224D9AAF00E7A95D /* UIViewController+Helper.swift in Sources */,
 				DC912331224C5F4900E7A95D /* Environment.swift in Sources */,
 				DC9122F7224C53ED00E7A95D /* AppDelegate.swift in Sources */,
 				DC91234E224C6FF700E7A95D /* Errors.swift in Sources */,
+				DC912365224DC0C100E7A95D /* SkinCollectionViewCell.swift in Sources */,
 				DC91235C224C72CA00E7A95D /* ChampionCollectionViewCell.swift in Sources */,
 				DC912361224DA9BB00E7A95D /* LoadingSpinner.swift in Sources */,
 				DC912354224C71AD00E7A95D /* AllChampionsViewModel.swift in Sources */,
