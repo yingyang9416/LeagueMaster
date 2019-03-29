@@ -11,27 +11,46 @@ import UIKit
 class MasterViewController: UIViewController {
     
     @IBOutlet weak var championCollectionView: UICollectionView!
-    let viewModel = AllChampionsViewModel()
+    private let viewModel = AllChampionsViewModel()
+    private let spinner = LoadingSpinner()
+    private let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        splitViewController?.delegate = self
-        splitViewController?.preferredDisplayMode = .allVisible
         setUpViews()
+        fetchAllChampions()
+        spinner.show(in: self)
+    }
+    
+    @objc private func fetchAllChampions(){
         viewModel.getAllChampions(onSuccess: {
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: { // delay only for showing the spinner
                 self.championCollectionView.reloadData()
-            }
+                self.spinner.dismiss()
+                self.refreshControl.endRefreshing()
+            })
         }) { (error) in
-            print("error")
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                self.spinner.dismiss()
+                self.refreshControl.endRefreshing()
+                self.showAlertWith(message: error?.localizedDescription ?? "Something went wrong")
+            })
         }
-        // Do any additional setup after loading the view.
     }
     
     private func setUpViews(){
+        splitViewController?.delegate = self
+        splitViewController?.preferredDisplayMode = .allVisible
         championCollectionView.register(UINib(nibName: "ChampionCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ChampionCollectionViewCell")
         championCollectionView.delegate = self
         championCollectionView.dataSource = self
+        
+        refreshControl.addTarget(self, action: #selector(fetchAllChampions), for: .valueChanged)
+        if #available(iOS 10.0, *){
+            championCollectionView.refreshControl = refreshControl
+        }else{
+            championCollectionView.addSubview(refreshControl)
+        }
     }
     
     

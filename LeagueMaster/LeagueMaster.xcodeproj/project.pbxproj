@@ -29,6 +29,8 @@
 		DC912359224C72A800E7A95D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912358224C72A800E7A95D /* DetailViewController.swift */; };
 		DC91235C224C72CA00E7A95D /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */; };
 		DC91235D224C72CA00E7A95D /* ChampionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */; };
+		DC91235F224D9AAF00E7A95D /* UIViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91235E224D9AAF00E7A95D /* UIViewController+Helper.swift */; };
+		DC912361224DA9BB00E7A95D /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC912360224DA9BB00E7A95D /* LoadingSpinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		DC912358224C72A800E7A95D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DC91235A224C72CA00E7A95D /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC91235B224C72CA00E7A95D /* ChampionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionCollectionViewCell.xib; sourceTree = "<group>"; };
+		DC91235E224D9AAF00E7A95D /* UIViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helper.swift"; sourceTree = "<group>"; };
+		DC912360224DA9BB00E7A95D /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
 		E2444D84FC5F1AE960FF70BE /* Pods-LeagueMaster.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMaster.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMaster/Pods-LeagueMaster.qa.xcconfig"; sourceTree = "<group>"; };
 		E9B15BE4F17EA9171A4F9B4D /* Pods-LeagueMasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeagueMasterUITests/Pods-LeagueMasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2DAA70C5EFED50E45DBD4C /* Pods-LeagueMasterTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMasterTests.qa.xcconfig"; path = "Target Support Files/Pods-LeagueMasterTests/Pods-LeagueMasterTests.qa.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 				DC912349224C6FB600E7A95D /* NetworkManager.swift */,
 				DC91234B224C6FDB00E7A95D /* ApiCaller.swift */,
 				DC91234D224C6FF700E7A95D /* Errors.swift */,
+				DC912360224DA9BB00E7A95D /* LoadingSpinner.swift */,
+				DC91235E224D9AAF00E7A95D /* UIViewController+Helper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -500,10 +506,12 @@
 				DC91234C224C6FDB00E7A95D /* ApiCaller.swift in Sources */,
 				DC912334224C608500E7A95D /* ProjectConstants.swift in Sources */,
 				DC91234A224C6FB600E7A95D /* NetworkManager.swift in Sources */,
+				DC91235F224D9AAF00E7A95D /* UIViewController+Helper.swift in Sources */,
 				DC912331224C5F4900E7A95D /* Environment.swift in Sources */,
 				DC9122F7224C53ED00E7A95D /* AppDelegate.swift in Sources */,
 				DC91234E224C6FF700E7A95D /* Errors.swift in Sources */,
 				DC91235C224C72CA00E7A95D /* ChampionCollectionViewCell.swift in Sources */,
+				DC912361224DA9BB00E7A95D /* LoadingSpinner.swift in Sources */,
 				DC912354224C71AD00E7A95D /* AllChampionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

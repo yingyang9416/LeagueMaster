@@ -12,6 +12,7 @@ class AllChampionsViewModel {
     private(set) var allChampions: [Champion] = []
     
     func getAllChampions(onSuccess: @escaping () -> (), onFail: @escaping (NetWorkError?)->()) {
+        allChampions = []
         ApiCaller.shared.getAllChampions(onSuccess: { (responseModel) in
             for (_, champion) in responseModel.data {
                 self.allChampions.append(champion)
