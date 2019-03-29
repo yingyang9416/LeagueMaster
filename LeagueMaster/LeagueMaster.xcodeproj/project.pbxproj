@@ -687,7 +687,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E7648AF5A8566470EAA8A6D /* Pods-LeagueMaster.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Dev;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7QBMXQ554;
 				INFOPLIST_FILE = LeagueMaster/Info.plist;
@@ -706,7 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08B483B9DD3578509F8CA349 /* Pods-LeagueMaster.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Prod;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7QBMXQ554;
 				INFOPLIST_FILE = LeagueMaster/Info.plist;
@@ -873,7 +873,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8D0286CA139CEFBBD20EE97 /* Pods-LeagueMaster.development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Dev;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7QBMXQ554;
 				INFOPLIST_FILE = LeagueMaster/Info.plist;
@@ -997,7 +997,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E67DD7CB88638F8BDBCB2AA /* Pods-LeagueMaster.production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Prod;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7QBMXQ554;
 				INFOPLIST_FILE = LeagueMaster/Info.plist;
@@ -1121,7 +1121,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2444D84FC5F1AE960FF70BE /* Pods-LeagueMaster.qa.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_QA;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7QBMXQ554;
 				INFOPLIST_FILE = LeagueMaster/Info.plist;
